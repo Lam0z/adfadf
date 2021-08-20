@@ -31,14 +31,14 @@
             <div class="form__item form__item_button"><button class="form__button button" type="submit">{{ button }}</button></div>
         </div><!-- form__items -->
 
-        <div class="form__more">
+        <!-- <div class="form__more">
             <label class="form__footer {{ form__footer_class }}">
                 <div class="form__footer-checkbox"><input type="checkbox" name="personalDataAgree" checked>
                     <div class="form__footer-checkbox-icon lazy"></div>
                 </div>
                 <div class="form__footer-text">Согласен c&nbsp;<a href="#privacy" class="fancybox form__more-link">политикой конфиденциальности </a> и&nbsp;на&nbsp;получение рассылок от&nbsp;Synergy Master Class и&nbsp;Школы Бизнеса &laquo;Синергия&raquo;</div>
             </label>
-        </div>
+        </div> -->
     </div>
 </form>
 {% endmacro %}

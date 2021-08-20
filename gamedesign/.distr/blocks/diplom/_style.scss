@@ -1,0 +1,38 @@
+.diplom {
+    padding: 100px 0;
+    &__wrapper {
+        border: 1px solid #4A4A4A;
+        display: grid;
+        grid-template-columns: 40fr 60fr;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    &__titles {
+        padding: 60px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        margin-bottom: 50px;
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    &__image {
+        display: flex;
+        img{
+            width: 100%;
+        }
+    }
+}
+.container {
+}

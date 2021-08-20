@@ -74,16 +74,19 @@ require_once 'version.php';
 
     {% include 'header/block.php' %}
 
-    {% include 'main/block.php' %}
+    {% include 'main/block.php' %} 
     
 
     {% include 'formats/block.php' %}
     {% include 'games/block.php' %}
     {% include 'learn/block.php' %}
-    
-
-    {% include 'form-section/block-mistakes.php' %}
-
+    {% include 'speciality/block.php' %}
+    {% include 'program/block.php' %}
+    {% include 'diplom/block.php' %}
+    {% include 'center/block.php' %}
+    {% include 'about/block.php' %}
+    {% include 'platform/block.php' %}
+    {% include 'consultation/block.php' %}
     {% include 'footer/block.php' %}
 
     {% endblock %}

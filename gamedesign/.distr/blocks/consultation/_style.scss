@@ -1,0 +1,161 @@
+.consultation {
+    padding-bottom:  100px;
+
+    &__title {
+        // max-width: 50%;
+        min-height: 170px;
+        background: url(../img/consultation/title.svg) no-repeat left center/contain;
+        // padding: 30px 90px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        justify-content: center;
+        // justify-content: space-between;
+        // justify-content: flex-end;
+        // align-items: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 110%;
+        margin-bottom: 50px;
+        span{
+            max-width: 500px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 110%;
+            // margin-left: 250px;
+            // margin-left: 100px;
+        }
+    }
+
+    &__variants {
+        // display: grid;
+        // grid-template-columns: repeat(3,1fr);
+        // align-items: center;
+        display: flex;
+
+        border: 2px solid #3F3D3D;
+
+
+    }
+
+    &__variant {
+        padding: 50px 40px;
+        flex-basis: 33%;
+        // flex-grow: 1;
+        &:not(:last-child){
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 2px;
+                background: #3F3D3D;
+
+            }
+        }
+
+    }
+
+    &__variant-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 110%;
+        margin-bottom: 12px;
+    }
+
+    &__variant-descr {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 114.5%;
+    }
+
+    &__wrapper {
+        margin-top: -2px;
+        border: 2px solid #3F3D3D;
+        display: flex;
+
+    }
+
+    &__start {
+        flex-basis: 50%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 2px;
+            background: #3F3D3D;
+
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 5%;
+            width: 610px;
+            height: 337px;
+            background: url(../img/consultation/ninja.svg) no-repeat 50% 100%;
+            z-index: 1;
+
+        }
+    }
+
+    &__start-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 110%;
+    }
+
+    &__start-date {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 110%;
+        span{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 110%;
+        }
+    }
+    &__join{
+        flex-basis: 50%;
+        .form{
+            background: none;
+            &__input{
+                border: 2px solid #FFFFFF;
+                color: grey;
+            }
+        }
+        .form_vertical .form__item {
+            max-width: 100%;
+        }
+        .form__title{
+            max-width: 100%;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 110%;
+        }
+        .form__item_button{
+            max-width: 50% !important;
+            margin: 0 auto; 
+        }   
+    }
+}
+.container {
+}

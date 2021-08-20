@@ -1,3 +1,217 @@
 .footer {
+    padding: 50px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 200px;
+        grid-row-gap: 30px;
+        align-items: start;
+    }
 
+    &__corp-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        grid-column: 1/2;
+    }
+
+    &__corp-img {
+        // height: 32px;
+        // width: 32px;
+        margin-right: 20px;
+    }
+
+    &__corp-name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 105.5%;
+    }
+
+    &__corp-descr {
+        flex-grow: 1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 143%;
+        /* or 19px */
+
+        letter-spacing: -0.01em;
+
+        color: #CFCFCF;
+    }
+
+    &__links {
+        display: flex;
+        // justify-content: space-between;
+        justify-content: center;
+        grid-row: 1/3;
+    }
+
+    &__links-list {
+        margin-right: 50px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__links-item {
+        // font-style: normal;
+        // font-weight: 500;
+        // font-size: 16px;
+        // line-height: 143%;
+        // letter-spacing: -0.01em;
+        // color: #CFCFCF;
+        margin-bottom: 15px;
+
+    }
+
+    &__links-title {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 143%;
+        flex-grow: 1;
+        margin-bottom: 22px;
+    }
+
+    &__link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 143%;
+        color: #CFCFCF;
+    }
+
+    &__feedback {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 1/-1;
+        // grid-row: 2/3;
+    }
+    &__feedback-email {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    &__feedback-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 143%;
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__feedback-item {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 143%;
+        /* identical to box height, or 23px */
+
+        letter-spacing: -0.01em;
+        position: relative;
+        color: #CFCFCF;
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 30px;
+            width: 30px;
+            background: grey;
+        }
+    }
+
+    &__feedback-email {
+        &::before{
+            background: url(../img/footer/mail.svg) no-repeat ;
+        }
+        
+
+    }
+
+    &__feedback-phones {
+        display: flex;
+    }
+
+    &__feedback-phone {
+        margin-right: 20px;
+        &::before{
+            background: url(../img/footer/phone.svg) no-repeat ;
+        }
+    }
+
+    &__feedback-whatsapp {
+        &::before{
+            background: url(../img/footer/message.svg) no-repeat ;
+        }
+    }
+
+    &__news {
+    }
+
+    &__news-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 143%;
+        margin-bottom: 10px;
+    }
+
+    &__social-list {
+        display: flex;
+        
+    }
+
+    &__social-item {
+        margin-right: 20px;
+        display: flex;
+        font-size: 0;
+        &:nth-child(1) a{
+            background: url(../img/footer/yt.svg) no-repeat center;
+        }
+        &:nth-child(2) a{
+            background: url(../img/footer/inst.svg) no-repeat center;
+        }
+        &:nth-child(3) a{
+            background: url(../img/footer/tw.svg) no-repeat center;
+        }
+        &:nth-child(4) a{
+            background: url(../img/footer/fb.svg) no-repeat center;
+        }
+
+    }
+
+    &__leagl {
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 143%;
+        /* identical to box height, or 16px */
+        letter-spacing: -0.015em;
+        color: #CFCFCF;
+    }
+
+    &__legal-copy {
+        text-decoration: none;
+    }
+    &__legal-privacy {
+        text-decoration: underline;
+    }
+    &__legal-dev {
+    }
+    &__social-link {
+        width: 30px;
+        height: 30px;
+        
+    }
 }

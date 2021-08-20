@@ -1,0 +1,81 @@
+.center {
+    padding-bottom: 100px;
+
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+    }
+
+    &__item {
+        border: 1px solid #4A4A4A;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    &__pic {
+        width: 43px;
+        height: 52px;
+        margin-right: 20px;
+    }
+
+    &__description {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    &__teacher {
+        display: grid;
+        grid-template-columns: 80px auto 60%;
+        // min-height: 100px;
+        grid-column-gap: 50px;
+        align-items: center;
+        padding: 20px 25px;
+        border: 1px solid #4A4A4A;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    &__teacher-pic {
+        // width: 80px;
+        // height: 80px;
+    }
+
+    &__teacher-names {
+
+    }
+
+    &__teacher-name {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    &__teacher-descr {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+    }
+
+    &__teacher-info {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 120%;
+    }
+}

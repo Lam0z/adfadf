@@ -1,3 +1,5 @@
+//=require program/script.js
+
 $(function () {
     /* Inits */
     initLazy();
