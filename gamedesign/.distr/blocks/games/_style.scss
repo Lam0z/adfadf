@@ -12,18 +12,24 @@
         height: 100%;
         background: url(../img/games/gamessoldier.svg) no-repeat 0 50%;
     }
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50px;
+        width: 100vw;
+        height: 100%;
+        background: url(../img/games/gamesline.svg) no-repeat;
+    }
     .container {
         display: flex;
         justify-content: center;
     }
     &__header {
-        min-height: 230px;
-        background: url(../img/games/gamesline.svg) no-repeat center/cover;
-        padding: 30px 90px;
         display: flex;
-        // justify-content: space-between;
-        justify-content: flex-end;
-        // align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        align-items: center;
         
         
     }
@@ -42,7 +48,7 @@
         font-weight: normal;
         font-size: 24px;
         line-height: 124.5%;
-        margin-left: 80px;
+        // margin-left: 80px;
     }
 
     &__list {

@@ -1,6 +1,7 @@
 .header {
 
     @media (max-width: 1199px) {
+        // display: none;
         
     }
 
@@ -9,11 +10,25 @@
     }
 
     @media (max-width: 767px) {
+        .burger{
+            display: flex;
+        }
+        &__nav{
+            display: none;
+        }
+        &__phone{
+            display: none;
+        }
         
     }
 
     @media (max-width: 575px) {
-        
+        &__logo{
+            margin-right: 20px;
+        }
+        .burger-menu--active{
+            width: 100%;
+        }
     }
 }
    

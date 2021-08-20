@@ -1,10 +1,19 @@
-.mistakes {
+.formats {
 
     @media (max-width: 1199px) {
         
     }
 
     @media (max-width: 991px) {
+        &__list{
+            justify-content: center;
+            justify-items: center;
+            margin: 0 auto;
+        }
+        &__item{
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
         
     }
 
@@ -13,7 +22,10 @@
     }
 
     @media (max-width: 575px) {
-        
+        &__item{
+            margin: 0;
+            margin-bottom: 20px;
+        }
     }
 }
    

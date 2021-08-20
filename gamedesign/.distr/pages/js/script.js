@@ -1,3 +1,4 @@
+//=require header/script.js
 //=require program/script.js
 
 $(function () {

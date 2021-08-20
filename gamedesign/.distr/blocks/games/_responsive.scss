@@ -1,6 +1,25 @@
-.mistakes {
+.games {
 
     @media (max-width: 1199px) {
+        background: url(../img/games/gamesgun.svg) no-repeat 100% 64%, url(../img/games/gamesbgright.svg) no-repeat 100% 64%;
+        
+        &__header{
+            padding: 20px;
+            width: 50%;
+            align-items: start;
+            flex-direction: column;
+        }
+        &__title{
+            text-align: left;
+            font-size: 24px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+        &__list{
+            margin: 0 auto; 
+            grid-template-columns: 1fr 1fr 1fr;
+        }
         
     }
 
@@ -9,10 +28,77 @@
     }
 
     @media (max-width: 767px) {
+
+        background: url(../img/games/soldierS.svg)no-repeat -20% 65%,url(../img/games/gunS.svg)no-repeat 430% 100%;
+        &::before{
+            background: none;
+        }
+        &__header{
+            padding: 15px;
+            width: 70%;
+            margin-left: 100px;
+            
+        }
+        &__title{
+            margin-bottom: 10px;
+            
+        }
+        &__subtitle{
+           
+        }
+        &__item5{
+            grid-column: 3/4;}
+        &__item4{
+            grid-column: 2/3;
+        
+    }
         
     }
 
     @media (max-width: 575px) {
+        background: url(../img/games/circlesM.svg)no-repeat 82% 30%,url(../img/games/gunM.svg)no-repeat 10% 57%;
+        &::before{
+            
+            background: url(../img/games/soldierM.svg) no-repeat 0 38%;
+            background-size: 100px;
+            left: 35px;
+        }
+        &__list{
+            
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item2{
+            grid-column: 2/3;
+        }
+        &__item3{
+            grid-column: 2/3;
+        }
+        &__item4{
+            grid-column: 1/2;
+        }
+        &__item5{
+            grid-column: 1/2;
+            // grid-row: 4/5;
+        
+    }
+        &::after{
+            left: 0;
+            background: url(../img/games/gamesline.svg) no-repeat -50px 0;
+            
+        }
+        &__header{
+            padding: 0;
+            width: 70%;
+            margin-left: 80px;
+            padding-top: 10px;
+        }
+        &__title{
+            font-size: 18px;
+            
+        }
+        &__subtitle{
+           font-size: 12px;
+        }
         
     }
 }
