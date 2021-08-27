@@ -1,10 +1,49 @@
-.header {
+.program {
 
     @media (max-width: 1199px) {
         
     }
 
     @media (max-width: 991px) {
+        &__nav{
+            max-width: 100%;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        &__nav-nubmer{
+            font-size: 48px;
+        }
+        &__nav-descr{
+            font-size: 10px;
+        }
+        &__nubmer{
+            font-size: 80px;
+            margin-right: 20px;
+            align-items: end;
+            
+            
+        }
+        &__numbers{
+            margin-right: 20px;
+            
+        }
+        &__descr{
+            padding-top: 0;
+            // padding-bottom: 140px;
+            font-size: 26px;
+            transform: translateY(-20px) ;
+        }
+        // &__list{
+        //     display: flex;
+        //     flex-direction: column;
+
+        // }
+        &__item{
+            display: flex;
+            justify-content: center;
+            // flex-direction: column;
+
+        }
         
     }
 

@@ -75,8 +75,6 @@ require_once 'version.php';
     {% include 'header/block.php' %}
 
     {% include 'main/block.php' %} 
-    
-
     {% include 'formats/block.php' %}
     {% include 'games/block.php' %}
     {% include 'learn/block.php' %}

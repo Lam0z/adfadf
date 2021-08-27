@@ -1,18 +1,151 @@
-.mistakes {
-
+.learn {
+    background: url(../img/learn/learnbg.svg) no-repeat 151% -60%;
     @media (max-width: 1199px) {
-        
+        &__header {
+            
+            align-items: start;
+            flex-direction: column;
+            padding: 30px 30px 30px 100px;
+            &::before {
+                height: 130%;
+                transform: translate(29px, 18px) rotate(-68deg);
+            }
+        }
+        &__title{
+            width: 50%;
+            // max-width: 50%;
+            margin-left: 100px;
+        }
+        &__content{
+            &::before{
+                top: -89%;
+                right: -31px;
+            }
+        }
     }
 
     @media (max-width: 991px) {
+        background: url(../img/learn/learnbg.svg) no-repeat 224% -21%;
+        &__header {
+            
+           
+            &::before {
+                height: 130%;
+                transform: translate(29px, 27px) rotate(-62deg);
+            }
+        }
+        &__content{
+            grid-template-columns: 1fr;
+        }
+        &__descriptin{
+            padding: 50px;
+            text-align: center;
+        }
+        &__content{
+            &::before{
+                width: 344px;
+                height: 222px;
+                top: -34%;
+                right: -25px;
+            }
+        }
+        &__video{
+            img{
+                width: 100%;
+            }
+        }
         
     }
 
     @media (max-width: 767px) {
+        background: url(../img/learn/learnbg.svg) no-repeat 172% 5%;
+        background-size: 72%;
+        &__header {
+            margin-left: 0;
+            clip-path: polygon(100% 0, 100% 100%, 13% 100%, 0 55%, 0 0);
+
+            &::before {
+                transform: translate(-6px, 15px) rotate(-56deg);
+            }
+
+        }
+        
+        &__title{
+            width: 70%;
+            margin-left: 0;
+        }
+        &__content{
+            &::before{
+                top: -39%;
+            }
+        }
         
     }
 
     @media (max-width: 575px) {
+        background: url(../img/learn/learnbg.svg) no-repeat 172% 52%;
+        background-size: 76%;
+        &__header {
+            clip-path: polygon(100% 0, 100% 100%, 31% 100%, 0 56%, 0 0);
+            padding: 10px 10px 10px 70px;
+            min-height: 380px;
+            align-items: start;
+            justify-content: start;
+            &::before{
+                transform: translate(-11px, 6px) rotate(-46deg);
+            }
+        }
+        &__title{
+            padding-top: 30px;
+            width: 100%;
+        }
+        &__content{
+           display: flex;
+           flex-direction: column;
+           &::before{
+
+                
+                top: -56%;
+           }
+        }
+        &__descriptin{
+            padding: 30px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 121.5%;
+        }
+        &__video{
+            &::before{
+                max-width: 30px;
+                max-height: 30px;
+            }
+        }
+        
+    }
+    @media (max-width: 320px) {
+        &__header {
+            clip-path: polygon(100% 0, 100% 100%, 31% 100%, 0 56%, 0 0);
+            padding: 10px 10px 10px 30px;
+            min-height: 380px;
+            align-items: start;
+            justify-content: start;
+            &::before{
+                transform: translate(-11px, 6px) rotate(-46deg);
+            }
+        }
+        &__title{
+            padding-top: 30px;
+            width: 100%;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            &::before{
+ 
+                 
+                 top: -69%;
+            }
+         }
         
     }
 }

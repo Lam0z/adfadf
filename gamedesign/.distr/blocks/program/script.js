@@ -18,13 +18,32 @@ for (let i = 0; i < tabsItems.length; i++) {
     })
 }
 let programNavItem=document.querySelectorAll('.program__nav-item')
+let programItem=document.querySelectorAll('.program__item')
 for (let i = 0; i < programNavItem.length; i++) {
     programNavItem[i].addEventListener('click',(e)=>{
         for (let k = 0; k < programNavItem.length; k++) {
             programNavItem[k].classList.remove('program__nav-item--active')
+            programItem[k].style.display='none'
         }
         programNavItem[i].classList.add('program__nav-item--active')
+        programItem[i].style.display='grid'
         
     })
     
 }
+window.addEventListener('resize',()=>{
+    if(window.innerWidth<767){
+        for(let i = 0;i<programNavItem.length;i++){
+            
+            programItem[i].style.display='none'
+            programItem[0].style.display='flex'
+        }
+    }else{
+        for(let i = 0;i<programNavItem.length;i++){
+            programNavItem[0].classList.add('program__nav-item--active')
+            programItem[i].style.display='flex'
+            
+        }
+    }
+})
+

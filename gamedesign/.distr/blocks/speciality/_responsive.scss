@@ -1,18 +1,54 @@
-.header {
+.speciality {
 
     @media (max-width: 1199px) {
         
     }
 
     @media (max-width: 991px) {
+        &__title{
+            margin-left: 10%;
+        }
+        &__list {
+            max-width: 90%;
+            margin-left: auto;
+            margin-bottom: 100px;
+        }
         
     }
 
     @media (max-width: 767px) {
+        &__item{
+            grid-template-columns: 1fr;
+        }
+        &__name{
+            margin-bottom: 20px;
+        }
         
     }
 
     @media (max-width: 575px) {
+        &__item{
+            padding: 20px;
+        }
+        &__title{
+            // padding-top: 20px;
+            font-size: 18px;
+            margin-left: 25%;
+        }
+        &__name{
+            font-size: 18px;
+        }
+        &__description{
+            font-size: 12px;
+        }
+        
+    }
+    @media (max-width: 320px) {
+        &__title{
+            padding: 30px 30px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
         
     }
 }

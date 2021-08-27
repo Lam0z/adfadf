@@ -6,21 +6,34 @@
     }
 
     &__header {
-        // clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
-        // background: #000;
-        min-height: 180px;
-        background: url(../img/learn/learnbd.svg) no-repeat center/contain;
         display: flex;
-        // justify-content: center;
+        justify-content: center;
         align-items: center;
         position: relative;
-        // border: 1px solid #000;
-        
+        overflow: hidden;
+        border: 1px solid #3F3D3D;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 50px;
+        padding: 50px ;
+        clip-path: polygon(100% 0, 100% 100%, 13% 100%, 0 55%, 0 0);
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50px;
+            width: 1px;
+            height: 100%;
+            border: 1px solid #3F3D3D;
+            z-index: -1;
+            transform: translate(31px, 50px) rotate(-64deg);
+        }
     }
 
     &__title {
-        margin-left: 20%;
+        // margin-left: 20%;
         flex-basis: 50%;
+        
         
     }
 
@@ -34,17 +47,19 @@
         position: relative;
         background: #1A1A1B;
         &::before{
-    
+
             content: '';
             position: absolute;
             top: -81%;
             right: -50px;
             width: 501px;
+            max-width: 501px;
+            max-height: fit-content;
             height: 324px;
             // border: 1px solid grey;
             // outline: 2px solid orange;
             z-index: 1;
-            background: url(../img/learn/learnsoldier.svg) no-repeat ;
+            background: url(../img/learn/learnsoldier.svg) no-repeat center/contain ;
         }
     }
 

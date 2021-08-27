@@ -67,16 +67,19 @@
     }
 
     &__item {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-column-gap: 50px;
+        display: flex;
+        // flex-direction: ;
+        grid-template-columns: 40% 60%;
+        // grid-column-gap: 50px;
         margin-bottom: 50px;
     }
 
     &__numbers {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: center;
+        // flex-basis: 20%;
+        // align-items: flex-start;
+        // justify-content: flex-start;
     }
 
     &__nubmer {
@@ -85,21 +88,26 @@
         font-size: 300px;
         line-height: 106%;
         color: #B10E04;
+        max-width: 350px;
     }
 
     &__descr {
         font-style: normal;
         font-weight: 300;
         font-size: 52px;
+        writing-mode: vertical-rl;
+        padding-top: 50px;
         // line-height: 112%;
         // transform: rotateZ(270deg);
-        transform-origin: 0 50%;  
-        transform: translateY(240px) rotate(270deg);
+        // transform-origin: 0 50%;  
+        transform: rotate(180deg);
         
     }
 
     &__item-wrapper {
         display: flex;
+        flex-basis: 70%;
+        flex-shrink: 0;
         flex-direction: column;
     }
     &__element{
