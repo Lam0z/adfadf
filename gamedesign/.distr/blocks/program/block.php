@@ -49,6 +49,6 @@
             </li>
             {% endfor %} 
         </ul>
-        {{ form.form( form_class = 'horizontal',button='ОСТАВИТЬ ЗАЯВКУ',title='Получи консультацию по программе и возможным скидкам') }}
+        {{ form.form( form_class = 'horizontal',button='ОСТАВИТЬ ЗАЯВКУ',title='Получи прорамму на все 8 семестров') }}
     </div>
 </section>

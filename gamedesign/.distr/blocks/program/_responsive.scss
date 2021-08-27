@@ -1,10 +1,16 @@
 .program {
 
     @media (max-width: 1199px) {
-        
+        &__title{
+            clip-path: polygon(0 0, 100% 0, 100% 58%, 82% 100%, 0 100%, 0 53%);
+        }
     }
 
     @media (max-width: 991px) {
+        &::after{
+            left: 0;
+        }
+        
         &__nav{
             max-width: 100%;
             justify-content: center;
@@ -25,13 +31,28 @@
         }
         &__numbers{
             margin-right: 20px;
+            display: flex;
+            align-items: flex-end;
+            flex-basis: 20%;
             
+        }
+        &__item-wrapper{
+            flex-basis: 80%;
+        }
+        &__element{
+            padding: 20px;
+        }
+        &__name{
+            font-size: 20px;
+        }
+        &__info-item{
+            font-size: 13px;
         }
         &__descr{
             padding-top: 0;
             // padding-bottom: 140px;
             font-size: 26px;
-            transform: translateY(-20px) ;
+            // transform: translateY(-20px) ;
         }
         // &__list{
         //     display: flex;
@@ -44,15 +65,109 @@
             // flex-direction: column;
 
         }
+        &__title{
+            clip-path: polygon(0 0, 100% 0, 100% 57%, 78% 100%, 0 100%, 0 55%);
+        }
+        &__title span{
+            margin-right: 30px;
+        }
+        
         
     }
 
     @media (max-width: 767px) {
+        &__title{
+            
+            clip-path: polygon(0 0, 100% 0, 100% 46%, 68% 100%, 0 100%, 0 55%);
+            span{
+                font-size: 24px;
+            }
+        }
+        .form{
+            
+            background: url(../img/program/formM.svg) no-repeat  50% / contain;
+        }
         
     }
 
     @media (max-width: 575px) {
+        &::after{
+            top: 97px;
+            background: url(../img/program/gun.svg) no-repeat 0% 0%/66%;
+        }
         
+        &__title{
+            clip-path: polygon(0 0, 100% 0, 100% 46%, 81% 100%, 0 100%, 0 55%);
+            &::before{
+                transform: translate(209px, -83px) rotate( -124deg );
+            }
+            span{
+                margin-right: 0;
+            }
+        }
+        &__item{
+            // display: flex;
+            flex-wrap: wrap;
+            // flex-direction: column;
+
+        }
+        &__nav-descr{
+            font-size: 7px;
+        }
+        .program__nav-nubmer{
+            font-size: 24px ;
+        }
+        &__nav{
+            margin-bottom: 20px;
+        }
+        &__nav-item:not(:last-child) {
+            margin-right: 6px;
+        }
+        &__numbers{
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-basis: 100%;
+            
+        }
+        &__item-wrapper{
+            flex-basis: 100%;
+        }
+        &__descr{
+            transform: rotate(0);
+            writing-mode: inherit;
+        }
+        &__name{
+            font-size: 15px;
+        }
+        &__info{
+            font-size: 13px;
+        }
+        &__name span{
+            flex-basis: 30%;
+            width: 15px;
+            height: 15px;
+        }
+        .form{
+            
+            background: url(../img/form/formS.svg) no-repeat  50% / contain;
+        }
+        
+        
+        
+    }
+    @media(max-width:320px){
+        &::after{
+            background: url(../img/program/gun.svg) no-repeat 0% 0%/90%;
+        }
+        &__title{
+            padding-right: 10px;
+            padding-left: 80px;
+            clip-path: polygon(0 0, 100% 0, 100% 64%, 71% 100%, 0 100%, 0 55%);
+        
+        }
     }
 }
    

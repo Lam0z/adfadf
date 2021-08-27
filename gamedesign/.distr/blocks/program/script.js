@@ -26,7 +26,7 @@ for (let i = 0; i < programNavItem.length; i++) {
             programItem[k].style.display='none'
         }
         programNavItem[i].classList.add('program__nav-item--active')
-        programItem[i].style.display='grid'
+        programItem[i].style.display='flex'
         
     })
     
