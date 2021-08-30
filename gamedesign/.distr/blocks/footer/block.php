@@ -27,6 +27,7 @@
                 <li class="footer__links-item"><a href="#" class="footer__link">Новая Школа МХАТ</a></li>
             </ul>
         </div>
+        <a class="footer__request" href="#">Оставить заявку</a>
         <div class="footer__feedback footer__feedback-email">
             <p class="footer__feedback-title">Обраная связь</p>
             <a class="footer__feedback-item footer__feedback-email" href="mailto:feedback@synergy.online">
