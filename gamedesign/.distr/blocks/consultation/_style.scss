@@ -28,7 +28,10 @@
             // margin-left: 100px;
         }
     }
-
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
     &__variants {
         // display: grid;
         // grid-template-columns: repeat(3,1fr);

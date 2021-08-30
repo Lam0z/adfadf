@@ -22,7 +22,7 @@
         margin-bottom: 50px;
         padding: 50px ;
         
-        clip-path: polygon(0 0, 100% 0, 100% 65%, 84% 100%, 0 100%, 0 55%);
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 84% 100%, 0 100%, 0 55%);
         &::before{
             content: '';
             position: absolute;

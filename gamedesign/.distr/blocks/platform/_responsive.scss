@@ -1,4 +1,4 @@
-.main {
+.platform {
 
     @media (max-width: 1199px) {
         
@@ -9,11 +9,49 @@
     }
 
     @media (max-width: 767px) {
+        &__title{
+            min-height: 180px;
+            background: url(../img/platform/titleM.svg) no-repeat right center/contain;
+
+            span{
+                font-size: 24px;
+                margin-right: 0;
+                margin-left: 100px;
+            }
+        }
+        &__wrapper{
+            display: block;
+        }
+        &__list{
+            border-top: none;
+        }
         
     }
 
     @media (max-width: 575px) {
-        
+        &__title{
+            // min-height: 100px;
+            background: url(../img/platform/titleS.svg) no-repeat right center/contain;
+            span{
+                font-size: 18px;
+                margin-right: 0;
+                margin-left: 80px;
+            }
+        }
+        &__list{
+            margin-top: 40px;
+            padding: 0;
+            border: none;
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 320px) {
+        &__title{
+           min-height: 100px;
+            span{
+                
+            }
+        }
     }
 }
    

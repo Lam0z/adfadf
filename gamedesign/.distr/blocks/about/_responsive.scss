@@ -1,18 +1,120 @@
-.main {
+.about {
 
     @media (max-width: 1199px) {
+        &::before{
+            left: -10%;
+            z-index: -1;
+            background-size: 80%;
+        }
+        &__title{
+            clip-path: polygon(0 0, 100% 0, 100% 58%, 82% 100%, 0 100%, 0 53%);
+            &::before{
+                transform: translate(93px, -104px) rotate(-114deg);
+            }
+            
+        }
         
     }
 
     @media (max-width: 991px) {
+        &__title{
+            clip-path: polygon(0 0, 100% 0, 100% 57%, 78% 100%, 0 100%, 0 55%);
+            span{
+                font-size: 30px;
+                margin-right: 0;
+            }
+        }
+        &::after{
+            background: url(../img/about/home.svg) no-repeat 0% 100%/60%;
+        }
         
     }
 
     @media (max-width: 767px) {
+        &__title{
+            
+            clip-path: polygon(0 0, 100% 0, 100% 46%, 68% 100%, 0 100%, 0 55%);
+            &::before{
+                transform: translate(93px, -110px) rotate(-115deg);
+            }
+            span{
+                font-size: 24px;
+                margin-right: 50px;
+            }
+        }
+        &__item{
+            flex-wrap: wrap;
+        }
+        &__item-wrapper{
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+        &__number{
+
+        }
+        &__description{
+
+        }
         
     }
 
     @media (max-width: 575px) {
+        &::before{
+            display: none;
+        }
+        &::after{
+            top: 97px;
+            background: url(../img/about/home.svg) no-repeat -42% 15%/59%;
+        }
+        
+        &__title{
+            // padding: 10px;
+            
+            clip-path: polygon(0 0, 100% 0, 100% 46%, 81% 100%, 0 100%, 0 55%);
+            &::before{
+                transform: translate(209px, -127px) rotate(-137deg);
+            }
+            span{
+                font-size: 18px;
+                margin-right: 0;
+                margin-left: 70px;
+            }
+        }
+        &__information{
+            max-width: 100%;
+            padding: 30px;
+            font-size: 14px;
+        }
+        
+    }
+    @media (max-width: 320px) {
+        &::after{
+            top: 97px;
+            background: url(../img/about/home.svg) no-repeat -95% 15%/59%;
+        }
+        
+        &__title{
+           padding-top: 50px;
+            padding-left: 0;
+            &::before{
+                transform: translate(209px, -76px) rotate(-154deg);
+            }
+            
+        }
+        &__list{
+            max-width: 90%;
+        }
+        &__item{
+            padding: 20px;
+        }
+        &__item-wrapper{
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &__number{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
         
     }
 }

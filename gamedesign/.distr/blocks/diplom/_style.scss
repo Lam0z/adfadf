@@ -3,12 +3,13 @@
     &__wrapper {
         border: 1px solid #4A4A4A;
         display: grid;
-        grid-template-columns: 40fr 60fr;
-        align-items: center;
+        grid-template-columns: 1fr 1.5fr;
+        
         margin-bottom: 100px;
     }
 
     &__titles {
+        // align-self: center;
         padding: 60px;
     }
 
